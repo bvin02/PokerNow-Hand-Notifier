@@ -4,6 +4,16 @@ A zero-build Chrome Manifest V3 extension that watches your visible PokerNow sta
 
 > **Compatibility:** This extension works only in PokerNow's **No Limit Hold'em** mode. Other PokerNow game modes are not supported.
 
+## Screenshots
+
+**Good-hand notification**
+
+![PokerNow table showing a good-hand notification for AJs](screenshots/good-hand-notification.png)
+
+**Extension popup**
+
+![Hand Notifier popup showing detector controls, the saved range, and current hand status](screenshots/extension-popup.png)
+
 ## Behavior
 
 ### Good hands
