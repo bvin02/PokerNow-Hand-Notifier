@@ -2,6 +2,8 @@
 
 A zero-build Chrome Manifest V3 extension that watches your visible PokerNow starting hand.
 
+> **Compatibility:** This extension works only in PokerNow's **No Limit Hold'em** mode. Other PokerNow game modes are not supported.
+
 ## Behavior
 
 ### Good hands
