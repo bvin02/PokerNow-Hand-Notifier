@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "PokerNow Hand Notifier",
+  "version": "1.2.0",
+  "description": "Notifies with sound on a configurable PokerNow starting-hand range, safely handles bad hands preflop, and alerts once when a live hand reaches the flop.",
+  "permissions": [
+    "notifications",
+    "storage",
+    "tabs",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "*://*.pokernow.com/*",
+    "*://*.pokernow.club/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "PokerNow Hand Notifier",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.pokernow.com/games/*",
+        "*://*.pokernow.club/games/*"
+      ],
+      "js": [
+        "hand-utils.js",
+        "action-utils.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "minimum_chrome_version": "109"
+}

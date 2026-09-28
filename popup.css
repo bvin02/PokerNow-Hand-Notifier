@@ -1,0 +1,178 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0b1220;
+  color: #e5edf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  margin: 0;
+  background: #0b1220;
+}
+
+main {
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+header p,
+.hint {
+  margin: 2px 0 0;
+  color: #91a2b7;
+  font-size: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 12px;
+  margin-bottom: 14px;
+  border: 1px solid #243247;
+  border-radius: 10px;
+  background: #111b2c;
+}
+
+.toggle-row input {
+  width: 18px;
+  height: 18px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 76px;
+  padding: 10px;
+  border: 1px solid #32445e;
+  border-radius: 9px;
+  background: #09101c;
+  color: #f8fafc;
+  font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+textarea:focus,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+button {
+  border: 1px solid #32445e;
+  border-radius: 8px;
+  padding: 9px 10px;
+  background: #17243a;
+  color: #eaf2fb;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+button:hover {
+  background: #20314d;
+}
+
+button.primary {
+  border-color: #2563eb;
+  background: #2563eb;
+}
+
+button.primary:hover {
+  background: #1d4ed8;
+}
+
+.status-card {
+  margin-top: 14px;
+  padding: 11px 12px;
+  border: 1px solid #243247;
+  border-radius: 10px;
+  background: #111b2c;
+}
+
+.status-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-button {
+  border: 0;
+  padding: 2px;
+  background: transparent;
+  color: #7db3ff;
+  font-size: 12px;
+}
+
+.status-card p {
+  margin: 8px 0;
+  color: #cbd7e6;
+  font-size: 13px;
+}
+
+.status-card code {
+  display: block;
+  max-height: 74px;
+  overflow: auto;
+  color: #8fa4bd;
+  font-size: 11px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+#message {
+  min-height: 16px;
+  margin: 10px 0 0;
+  color: #86efac;
+  font-size: 12px;
+}
+
+#message.error {
+  color: #fca5a5;
+}
+
+.action-toggle {
+  align-items: flex-start;
+}
+
+.action-toggle span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-right: 10px;
+}
+
+.action-toggle small {
+  color: #91a2b7;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.3;
+}

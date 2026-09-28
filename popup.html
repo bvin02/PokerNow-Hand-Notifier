@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PokerNow Hand Notifier</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="icons/icon48.png" alt="" width="36" height="36" />
+        <div>
+          <h1>Hand Notifier</h1>
+          <p>Preflop notification and folding guard</p>
+        </div>
+      </header>
+
+      <label class="toggle-row">
+        <span>Enable detector</span>
+        <input id="enabled" type="checkbox" />
+      </label>
+
+      <label class="toggle-row action-toggle">
+        <span>
+          Enable bad-hand auto-actions
+          <small>Preflop only: fold, free blind check, or safe SB completion</small>
+        </span>
+        <input id="autoActionsEnabled" type="checkbox" />
+      </label>
+
+      <label for="rangeText">Good hands</label>
+      <textarea id="rangeText" rows="4" spellcheck="false"></textarea>
+      <p class="hint">Good hands only notify. Use commas. “AQ” includes AQs and AQo. “TT” and “1010” are accepted.</p>
+
+      <div class="buttons">
+        <button id="save" class="primary" type="button">Save range</button>
+        <button id="test" type="button">Test notification</button>
+      </div>
+
+      <section class="status-card">
+        <div class="status-heading">
+          <strong>Current tab</strong>
+          <button id="refresh" class="link-button" type="button">Refresh</button>
+        </div>
+        <p id="status">Checking...</p>
+        <code id="details"></code>
+      </section>
+
+      <p id="message" role="status"></p>
+    </main>
+
+    <script src="hand-utils.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
