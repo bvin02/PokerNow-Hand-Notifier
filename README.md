@@ -10,13 +10,16 @@ This project is provided for educational and software demonstration purposes. It
 
 ## Screenshots
 
-**Good-hand notification**
-
-![PokerNow table showing a good-hand notification for AJs](screenshots/good-hand-notification.png)
-
-**Extension popup**
-
-![Hand Notifier popup showing detector controls, the saved range, and current hand status](screenshots/extension-popup.png)
+<table>
+	<tr>
+		<th>Good-hand notification</th>
+		<th>Extension popup</th>
+	</tr>
+	<tr>
+		<td><img src="screenshots/good-hand-notification.png" width="360" alt="PokerNow table showing a good-hand notification for AJs"></td>
+		<td><img src="screenshots/extension-popup.png" width="360" alt="Hand Notifier popup showing detector controls, the saved range, and current hand status"></td>
+	</tr>
+</table>
 
 ## Behavior
 
