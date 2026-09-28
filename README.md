@@ -4,6 +4,10 @@ A zero-build Chrome Manifest V3 extension that watches your visible PokerNow sta
 
 > **Compatibility:** This extension works only in PokerNow's **No Limit Hold'em** mode. Other PokerNow game modes are not supported.
 
+## Disclaimer
+
+This project is provided for educational and software demonstration purposes. It does not promote cheating, collusion, technology-assisted play in poker, or real-money gambling. PokerNow may restrict or prohibit tools like this under its current terms, and individual tables may have additional rules. Review and follow PokerNow's current terms, table rules, and applicable laws. You are responsible for how you use this software; use it only where permitted.
+
 ## Screenshots
 
 **Good-hand notification**
